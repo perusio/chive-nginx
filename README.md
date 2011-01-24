@@ -11,7 +11,7 @@
    and user experience, no to mention security. phpMyAdmin it's
    problably one of the most insecure web apps out there.
    
-   It assumes that the domain affect to Piwik is `chive.example.com`.
+   It assumes that the domain affect to Chive is `chive.example.com`.
 
    Change accordingly to reflect your server setup.
    
