@@ -34,7 +34,7 @@
 
    4. Faster and more secure handling of PHP FastCGI by Nginx using
       named groups in regular expressions instead of using
-      [fastcgi_split_path_info](http://wiki.nginx.org/HttpFcgiModule#fastcgi_split_path_info
+      [fastcgi_split\_path\_info](http://wiki.nginx.org/HttpFcgiModule#fastcgi_split_path_info
       "FastCGI split path info"). Requires Nginx version &ge; 0.8.25.
 
    5. Expire header for static assets set to the maximum.
@@ -151,12 +151,12 @@
  
    It may work or not on Ubuntu. Since Ubuntu seems to appreciate more
    finding semi-witty names for their releases instead of making clear
-   what's the status of the software included, meaning. Is it
-   **stable**? Is it **testing**? Is it **unstable**? The package may
-   work with your currently installed environment or not. I don't have
-   the faintest idea which release to advise. So you're on your
-   own. Generally the APT machinery will sort out for you any
-   dependencies issues that might exist.
+   what's the status of the software included. Is it **stable**? Is it
+   **testing**? Is it **unstable**? The package may work with your
+   currently installed environment or not. I don't have the faintest
+   idea which release to advise. So you're on your own. Generally the
+   APT machinery will sort out for you any dependencies issues that
+   might exist.
 
 ## Running Chive in a subdirectory instead of a subdomain
 
@@ -206,4 +206,14 @@
              }
            }
         }
+
+## My other Nginx configurations on github
         
+   + [drupal](https://github.com/perusio/drupal-with-nginx "Drupal
+     Nginx configuration")
+          
+   + [wordpress](https://github.com/perusio/wordpress-nginx "WordPress Nginx
+     configuration")
+     
+   + [piwik](https://github.com/perusio/piwik-nginx "Piwik Nginx
+     configuration")
