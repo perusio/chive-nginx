@@ -207,13 +207,13 @@
            }
         }
 
-## My other Nginx configurations on github
+## My other Nginx configs on github
         
-   + [drupal](https://github.com/perusio/drupal-with-nginx "Drupal
+   + [Drupal](https://github.com/perusio/drupal-with-nginx "Drupal
      Nginx configuration")
           
-   + [wordpress](https://github.com/perusio/wordpress-nginx "WordPress Nginx
+   + [WordPress](https://github.com/perusio/wordpress-nginx "WordPress Nginx
      configuration")
      
-   + [piwik](https://github.com/perusio/piwik-nginx "Piwik Nginx
+   + [Piwik](https://github.com/perusio/piwik-nginx "Piwik Nginx
      configuration")
