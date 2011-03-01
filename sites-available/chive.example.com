@@ -64,7 +64,7 @@ server {
             fastcgi_param PATH_INFO $path_info;
             ## Passing the request upstream to the FastCGI
             ## listener.
-            fastcgi_pass unix:/tmp/php-cgi/php-cgi.socket;
+            fastcgi_pass phpcgi;
         }
         
         ## Protect these locations. Replicating the .htaccess
