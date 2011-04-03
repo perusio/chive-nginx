@@ -137,10 +137,18 @@
       can be done with `netstat`, like this for UNIX sockets:
       
         `netstat --unix -l`
-         
+      
+      or like this for TCP sockets:
+      
         `netstat -t -l`
    
       It should display the PHP CGI socket.
+      
+      Note that the default socket type is UNIX and the config assumes
+      it to be listening on `unix:/tmp/php-cgi/php-cgi.socket`, if
+      using the `php-cgi`, or in `unix:/var/run/php-fpm.sock` using
+      `php-fpm` and that you should **change** to reflect your setup
+      by editing `upstream_phpcgi.conf`.
    
    5. Create the `/etc/nginx/sites-enabled` directory and enable the
       virtual host using one of the methods described below.
@@ -246,3 +254,12 @@
      
    + [Piwik](https://github.com/perusio/piwik-nginx "Piwik Nginx
      configuration")
+
+## Securing your PHP configuration
+
+   I have created a small shell script that parses your `php.ini` and
+   sets a sane environment, be it for **development** or
+   **production** settings. 
+   
+   Grab it [here](https://github.com/perusio/php-ini-cleanup "PHP
+   cleanup script").
