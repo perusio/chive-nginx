@@ -18,23 +18,9 @@ server {
     ## Parameterization using hostname of access and log filenames.
     access_log  /var/log/nginx/chive.example.com_access.log;
     error_log   /var/log/nginx/chive.example.com_error.log;
-
-    ## Include the blacklist.conf file.
-    include sites-available/blacklist.conf;
-
-    ## Disable all methods besides HEAD, GET and POST.
-    if ($request_method !~ ^(GET|HEAD|POST)$ ) {
-        return 444;
-    }
-
-    root /var/www/sites/chive.example.com/;
+    
+    root /var/www/sites/chive.example.com;
     index index.php index.html;
-
-    ## Disallow any usage of piwik assets if referer is non valid.
-    location ~* ^.+\.(?:jpg|png|css|gif|jpeg|js|swf)$ {
-        expires max;
-        break;
-    }
 
     ## Support for favicon. Return a 204 (No Content) if the favicon
     ## doesn't exist.
@@ -80,6 +66,12 @@ server {
         }
         location = /priv/chive/yii/cli/views/webapp/protected {
             internal;
+        }
+
+        ## Static file handling.
+        location ~* /priv/.+\.(?:jpg|png|css|gif|jpeg|js|swf)$ {
+            expires max;
+            break;
         }
     }
 
