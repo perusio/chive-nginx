@@ -229,16 +229,11 @@
         
              ## Protect these locations. Replicating the .htaccess
              ## rules throughout the chive distro.
-             location = /priv/chive/protected {
+             location /priv/chive/protected {
                 internal;
              }
-             location = /priv/chive/yii {
-                internal;
-             }
-             location = /priv/chive/yii/cli/views/webapp/themes/classic/views {
-                internal;
-             }
-             location = /priv/chive/yii/cli/views/webapp/protected {
+             
+             location /priv/chive/yii {
                 internal;
              }
            }
