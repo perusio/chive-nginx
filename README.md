@@ -133,6 +133,9 @@
         to configure your fpm setup, in Debian/Ubuntu this is done in
         the `/etc/php5/fpm` directory.
         
+        Look [here](https://github.com/perusio/php-fpm-example-config) for
+        an **example configuration** of `php-fpm`.
+        
       Check that the socket is properly created and is listening. This
       can be done with `netstat`, like this for UNIX sockets:
       
