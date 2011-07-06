@@ -18,8 +18,8 @@
    The configuration is splitted in secure (https) and standard
    (http).
    
-   The first is given in the file `secure.chive.example.com`. The
-   second in `chive.example.com` of the `sites-available` directory
+   The first is given in the file `secure.chive.example.com.conf`. The
+   second in `chive.example.com.conf` of the `sites-available` directory
 
 ## Features
 
@@ -79,7 +79,7 @@
 
    Of course you can rename the password file to whatever you want,
    then accordingly change its name in the virtual host config
-   file, `chive.example.com` or `secure.chive.example.com`.
+   file, `chive.example.com.conf` or `secure.chive.example.com.conf`.
    
 ## Nginx as a Reverse Proxy: Proxying to Apache for PHP
 
@@ -98,8 +98,8 @@
    
       `git clone https://github.com/perusio/chive-nginx.git`
    
-   3. Edit the `sites-available/chive.example.com` or
-      `sites-available/secure.chive.example.com` configuration file to
+   3. Edit the `sites-available/chive.example.com.conf` or
+      `sites-available/secure.chive.example.com.conf` configuration file to
       suit your requirements. Namely replacing chive.example.com with
       **your** domain.
    
