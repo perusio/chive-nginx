@@ -63,10 +63,20 @@
    [ssl-cert](http://packages.debian.org/sid/ssl-cert "ssl-cert debian
    pkg") package.
    
+
+
    If you're on Debian or any of its derivatives like Ubuntu you need
-   the
+   either the
+   [thttpd-util](http://packages.debian.org/search?keywords=thttpd-util)
+   or
    [apache2-utils](http://packages.debian.org/search?suite%3Dall&section%3Dall&arch%3Dany&searchon%3Dnames&keywords%3Dapache2-utils)
-   package installed. Then create your password file by issuing:
+   package installed. 
+   
+   With `thttpd-util` create your password file by issuing:
+   
+          thtpasswd -c .htpasswd-users <user> <password>
+   
+   With `apache2-utils` create your password file by issuing:
 
           htpasswd -d -b -c .htpasswd-users <user> <password>
 
