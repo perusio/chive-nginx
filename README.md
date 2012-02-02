@@ -63,8 +63,6 @@
    [ssl-cert](http://packages.debian.org/sid/ssl-cert "ssl-cert debian
    pkg") package.
    
-
-
    If you're on Debian or any of its derivatives like Ubuntu you need
    either the
    [thttpd-util](http://packages.debian.org/search?keywords=thttpd-util)
