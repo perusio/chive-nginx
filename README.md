@@ -266,6 +266,9 @@
      
    + [Piwik](https://github.com/perusio/piwik-nginx "Piwik Nginx
      configuration")
+     
+   + [SquirrelMail](https://github.com/perusio/squirrelmail-nginx
+     "SquirrelMail Nginx configuration")
 
 ## Securing your PHP configuration
 
