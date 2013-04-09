@@ -72,7 +72,7 @@
    
    With `thttpd-util` create your password file by issuing:
    
-          thtpasswd -c .htpasswd-users <user> <password>
+          htpasswd -c .htpasswd-users <user> <password>
    
    With `apache2-utils` create your password file by issuing:
 
